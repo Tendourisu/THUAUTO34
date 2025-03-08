@@ -1,0 +1,230 @@
+site_name: Tendourisu's Site
+site_author: Tendourisu
+site_url: https://tendourisu.github.io
+site_description: Tendourisu 的个人网站
+repo_url: https://github.com/Tendourisu/tendourisu.github.io/
+repo_name: Tendourisu's Site
+copyright: Copyright &copy; 2024 - Present <a href="https://github.com/Tendourisu/" target="_blank" rel="noopener">Tendourisu</a>
+
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - header.autohide
+    # - navigation.instant.progress
+    # - navigation.instant.prefetch
+    # - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.path
+    # - navigation.prune
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: white # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/brightness-7 # 图标
+        name: light mode # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: dark mode
+
+  font:
+    text: JetBrains Mono
+
+  favicon: img/aris.png
+
+  icon:
+    logo: material/coffee
+    repo: fontawesome/brands/git-alt
+    edit: material/pencil
+
+  static_templates:
+    - 404.html
+
+plugins:
+  - blogging:
+      locale: en
+      dirs:
+        - blogs/posts
+      show_total: true
+      features:
+        tags:
+          index_page: tags/
+          insert: top
+  - callouts
+  - glightbox:
+      width: 80%
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - academy.md
+        - links.md
+        - changelog.md
+  - minify:
+      minify_html: true
+  - mkdocs-video:
+      video_muted: True
+      video_controls: True
+      mark: "video"
+  # - rss:
+  #     enabled: !ENV [CI, false]
+  #     use_material_social_cards: false
+  - search
+  - statistics:
+      words_per_minute: 200
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - meta
+  - md_in_html
+  - nl2br
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      auto_title: true # 显示编程语言名称
+      linenums: true # 显示行号
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.saneheaders
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tilde
+  - sane_lists
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 4
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  # - https://busuanzi.icodeq.com/busuanzi.pure.mini.js
+  - js/mathjax.js
+  - js/toc.js
+
+extra_css:
+  - css/custom.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - css/fold_toc.css
+  - css/card.css
+  - css/flink.css
+  - css/tasklist.css
+
+extra:
+  social:
+    - icon: /fontawesome/brands/github
+      link: https://github.com/Tendourisu/
+      name: GitHub
+    - icon: /fontawesome/brands/qq
+      link: /img/qq.jpg
+      name: 加加我的QQ
+    - icon: /fontawesome/brands/weixin
+      link: /img/wechat.jpg
+      name: 加加我的微信
+    - icon: /fontawesome/brands/x-twitter
+      link: https://x.com/tendourisu
+      name: X
+    - icon: /fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/tendourisu
+      name: Zhihu
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:2681708668@qq.com
+      name: send email to me!
+    # - icon: fontawesome/solid/rss
+    #   link: /feed_rss_created.xml
+    #   name: RSS created
+    # - icon: fontawesome/solid/rss
+    #   link: /feed_rss_updated.xml
+    #   name: RSS updatedfeed_rss_created.xml
+
+  # analytics:
+  #   provider: google
+  #   property: G-20LWGZNLLR
+  #   feedback:
+  #     title: Support Me!
+  #     ratings:
+  #       - icon: fontawesome/regular/hand-back-fist
+  #         name: Support Me!
+  #         data: 1
+  #         note: >-
+  #           <center> 难道说……你愿意给我买一瓶快乐水吗！🫣 </center>
+  #           <center> How about...buy me a coffee？😋 </center>
+  #           <img src="https://cdn.jsdelivr.net/gh/KinnariyaMamaTanha/Images@images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2024-12-07_230055_143.png" width=200px>
+
+nav:
+  - Home: index.md
+  - 概率论与数理统计:
+      - index: 概率论与数理统计/index.md
+      - week1-概率与概率空间: 率论与数理统计/week1-概率与概率空间.md
+      - week2-条件概率: 概率论与数理统计/week2-条件概率.md
+      - week3-离散随机变量: 概率论与数理统计/week3-离散随机变量.md
+  - 模拟电子技术基础:
+      - index: 模拟电子技术基础/index.md
+      - week1-1-intro: 模拟电子技术基础/week1-1-intro.md
+      - week1-3-半导体器件基础1: 模拟电子技术基础/week1-3-半导体器件基础1.md
+      - week2-1-半导体器件基础2: 模拟电子技术基础/week2-1-半导体器件基础2.md
+      - week2-3-基本放大电路1: 模拟电子技术基础/week2-3-基本放大电路1.md
+      - week3-1-基本放大电路2: 模拟电子技术基础/week3-1-基本放大电路2.md
+      - week3-3-基本放大电路3: 模拟电子技术基础/week3-3-基本放大电路3.md
+  - 信号与系统:
+      - index: 信号与系统/index.md
+      - week-1-intro: 信号与系统/week-1-intro.md
+      - week-2-典型信号与运算: 信号与系统/week-2-典型信号与运算.md
+      - week-3-微分方程与差分方程求解: 信号与系统/week-3-微分方程与差分方程求解.md
+  - contributors: contributors/index.md
