@@ -1,10 +1,10 @@
-site_name: Tendourisu's Site
-site_author: Tendourisu
-site_url: https://tendourisu.github.io
-site_description: Tendourisu 的个人网站
-repo_url: https://github.com/Tendourisu/tendourisu.github.io/
-repo_name: Tendourisu's Site
-copyright: Copyright &copy; 2024 - Present <a href="https://github.com/Tendourisu/" target="_blank" rel="noopener">Tendourisu</a>
+site_name: THUAUTO34
+site_author: THUAUTO34
+site_url: https://tendourisu.github.io/THUAUTO34
+site_description: THUAUTO34 的班级网站
+repo_url: https://github.com/Tendourisu/tendourisu.github.io/THUAUTO34
+repo_name: THUAUTO34's Site
+copyright: Copyright &copy; 2024 - Present <a href="https://github.com/Tendourisu/" target="_blank" rel="noopener">THUAUTO34</a>
 
 theme:
   name: material
@@ -211,7 +211,7 @@ nav:
   - Home: index.md
   - 概率论与数理统计:
       - index: 概率论与数理统计/index.md
-      - week1-概率与概率空间: 率论与数理统计/week1-概率与概率空间.md
+      - week1-概率与概率空间: 概率论与数理统计/week1-概率与概率空间.md
       - week2-条件概率: 概率论与数理统计/week2-条件概率.md
       - week3-离散随机变量: 概率论与数理统计/week3-离散随机变量.md
   - 模拟电子技术基础:

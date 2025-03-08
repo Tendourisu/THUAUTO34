@@ -13,7 +13,7 @@ icon: material/home
 
 <h1 style="text-align: center;">
 <span style="font-size:50px;">
-Welcome to Tendourisu's Site! 🎉
+Welcome to THUAUTO34's Site! 🎉
 </span>
 </h1>
 
@@ -31,7 +31,7 @@ Welcome to Tendourisu's Site! 🎉
 function updateTime() {
     var date = new Date();
     var now = date.getTime();
-    var startDate = new Date("2025/3/ 20:00:00");
+    var startDate = new Date("2025/3/8 20:00:00");
     var start = startDate.getTime();
     var diff = now - start;
     var y, d, h, m;
