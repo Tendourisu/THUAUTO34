@@ -57,27 +57,25 @@ math: "true"
 #### 古典概型
 - **定义**：$P(A) = \frac{\#A}{\#\Omega}$
 - **例1（摸球问题）**：
-- 
+
   $$
   袋中有α白球、β黑球，取a+b球，恰含a白b黑的概率：
-  P = \frac{C_\alpha^a C_\beta^b}{C_{\alpha+\beta}^{a+b}}
+  P = \frac{C_\alpha^a C_\beta^b}{C_{\alpha +\beta}^{a+b}}
   $$
 
 #### 几何概型
 - **定义**：$P(A) = \frac{L(A)}{L(\Omega)}$（L为测度）
 - **例2（约会问题）**：
-- 
-  $$
+
   两人在1小时内随机到达，会面成功的概率：
-  P = 1 - \frac{2 \times \frac{1}{2} \times 40^2}{60^2} = \frac{5}{9}
-  $$
+  
+$$P=1-\frac{2 \times \frac{1}{2} \times 40^2}{60^2} = \frac{5}{9}$$  
 
 ### 2.3 悖论与问题
 - **Bertrand悖论**：圆内随机弦长超过内接正三角形边长的概率存在多解（因"随机"定义不同）
 - **Buffon投针问题**：
-- 
-  $$
   针长l，平行线间距a(l < a)：
+  $$
   P = \frac{2l}{\pi a}
   $$
 
@@ -92,13 +90,11 @@ math: "true"
 
 ### 3.2 概率公理化定义
 - **Kolmogorov公理**：
-- 
-  $$
   (Ω, ℱ, P) 满足：
   1. 非负性：P(A) ≥ 0
   2. 规范性：P(Ω) = 1
-  3. 可数可加性：A_i 互斥时 P(\bigcup A_i) = \sum P(A_i)
-  $$
+  3. 可数可加性：A_i 互斥时 $P(\bigcup A_i) = \sum P(A_i)$
+
 
 ### 3.3 概率性质
 | 性质         | 公式                                                                           |

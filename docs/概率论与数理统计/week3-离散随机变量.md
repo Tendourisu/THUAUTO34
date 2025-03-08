@@ -26,7 +26,7 @@ $$
 
 - 负二项分布： $\infty重Bernoulli$ 实验中, 第r 次“成功”出现时所需的试验次数为Z，则r 次成功出现时恰好出现在 k 次的概率 （**帕斯卡分布**）
 
- $$
+$$
 P(Z=k)=C_{k-1}^{r-1}q^{k-r}p^r \leftrightarrow Z\sim NB(r,p)
 $$
 
