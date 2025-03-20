@@ -24,9 +24,11 @@ $$
 D（X）=E[X-EX]^2
 $$
 - 样本方差
+  
 $$
 S^2=\frac{1}{n-1}\sum^n_{i=1}(X-\overline{X})^2
 $$
+
 ### 中位数定义
 - p分位数$x_p$
 $$
@@ -74,18 +76,22 @@ $$
 
 - $E((X^*)^4$ :峰度kurtosis
 - 矩母函数MGF:
+  
 $$
 M_{X}(u)=E[e^uX]=\begin{cases}
 \sum_{i} e^{ux_{i}}p_{i}\\
  \int_{-\infty}^{\infty}e^{ux}f_{X}(x) dx 
 \end{cases}
 $$
+
 ![image.png](https://raw.githubusercontent.com/Tendourisu/images/master/20250313092136649.png)
 
 若$M_{X}(u)$在u=0的某个开邻域内存在，则
+
 $$
 E(X^k)=M_{X}^{(k)}(0)
 $$
+
 矩母函数（若存在）与分布函数相互唯一确定
 有关矩母函数的详细讲解与证明可参考：[如何通俗的理解矩母函数](https://zhuanlan.zhihu.com/p/148408669)
 ### 常见分布
@@ -122,9 +128,7 @@ $$k^* =
 超几何分布的概率质量函数为：
 
 $$
-
 P(X=k) = \frac{\binom{a}{k} \binom{b}{n-k}}{\binom{a+b}{n}}
-
 $$
 
   
@@ -132,9 +136,7 @@ $$
 将组合数展开为阶乘形式：
 
 $$
-
 P(X=k) = \frac{\frac{a!}{k!(a-k)!} \cdot \frac{b!}{(n-k)!(b-n+k)!}}{\frac{(a+b)!}{n!(a+b-n)!}}
-
 $$
 
   
@@ -142,9 +144,7 @@ $$
 整理分子和分母：
 
 $$
-
 P(X=k) = \frac{a! \cdot b! \cdot n! \cdot (a+b-n)!}{k! \cdot (a-k)! \cdot (n-k)! \cdot (b-n+k)! \cdot (a+b)!}
-
 $$
 
   
@@ -154,9 +154,7 @@ $$
 当$a$和$b$极大时，利用以下近似：
 
 $$
-
 \frac{a!}{(a-k)!} \approx a^k, \quad \frac{b!}{(b-(n-k))!} \approx b^{n-k}, \quad \frac{(a+b)!}{(a+b-n)!} \approx (a+b)^n
-
 $$
 
   
@@ -164,9 +162,7 @@ $$
 代入后得：
 
 $$
-
 P(X=k) \approx \frac{a^k \cdot b^{n-k} \cdot n!}{k! \cdot (n-k)! \cdot (a+b)^n} = \binom{n}{k} \cdot \left(\frac{a}{a+b}\right)^k \cdot \left(\frac{b}{a+b}\right)^{n-k}
-
 $$
 
   
@@ -176,9 +172,7 @@ $$
 由条件$\lim_{a+b \to \infty} \frac{a}{a+b} = p$，则$\frac{b}{a+b} \to 1-p = q$。因此：
 
 $$
-
 \lim_{a+b \to \infty} P(X=k) = \binom{n}{k} p^k q^{n-k}
-
 $$
 
 1. Riemann Zeta函数:$X\sim Zipf(\alpha)\leftrightarrow P(X=k)=\frac{1}{\zeta(\alpha)k^{\alpha}},where \ \xi(\alpha)=\sum^\infty_{n=1} \frac{1}{n^{\alpha}}$
