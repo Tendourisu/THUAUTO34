@@ -122,6 +122,7 @@ $$
 $$
 \mathcal{F}\left\{ \sum_{n=-\infty}^{\infty} \delta(t-nT) \right\} = \frac{2\pi}{T} \sum_{k=-\infty}^{\infty} \delta(\omega - k\omega_s)
 $$
+
 其中 $\omega_s = \frac{2\pi}{T}$
 
 ## 五、对称性应用实例
