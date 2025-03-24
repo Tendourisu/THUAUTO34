@@ -88,9 +88,7 @@ mdate: 2025-03-17
   
 
 $$  
-
 E[g(X,Y)] = \sum_{i} \sum_{j} g(x_i, y_j) \cdot P(X = x_i, Y = y_j)
-
 $$
 
 #### **关键点解析**
@@ -128,9 +126,7 @@ $$
 **解法：**
 
 $$
-
 E[X^2 Y] = \sum_{x=1}^6 \sum_{y=1}^6 x^2 y \cdot \frac{1}{36} = \frac{1}{36} \left( \sum_{x=1}^6 x^2 \right) \left( \sum_{y=1}^6 y \right) = \frac{1}{36} \cdot 91 \cdot 21 = 53.5
-
 $$
 
 （利用了独立性将双重求和分解为乘积）
@@ -175,10 +171,12 @@ $$ \min_C \{E((X - C)^2)\} = E((X - EX)^2) $$
 - 绝对误差：
 $$ \min_C \{E ((X - C))\} = E ((X - X_{median})) $$
 - **Cauchy-Schwarz不等式**：
+  
   $$
    [E (XY)] ^2 \leq E(X^2)E(Y^2)
   $$
 - Holder 不等式： $E|X|^p<\infty ,\ E|Y|^q<\infty ,\ \frac{1}p{+\frac{1}q{=1 ,\ p>1}}$
+  
   $$
    [E (XY)]  \leq (E(X^p))^{\frac{1}{p}}(E(Y^q))^{\frac{1}{q}}
   $$
