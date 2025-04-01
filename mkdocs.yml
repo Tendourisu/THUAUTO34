@@ -216,6 +216,7 @@ nav:
       - week3-离散随机变量: 概率论与数理统计/week3-离散随机变量.md
       - week4-分布的刻画量: 概率论与数理统计/week4-分布的刻画量.md
       - week5-多维随机变量: 概率论与数理统计/week5-多维随机变量.md
+      - week6-随机过程与Poisson过程: 概率论与数理统计/week6-随机过程与Poisson过程.md
   - 模拟电子技术基础:
       - index: 模拟电子技术基础/index.md
       - week1-1-intro: 模拟电子技术基础/week1-1-intro.md
@@ -228,6 +229,8 @@ nav:
       - week4-3-基本放大电路5: 模拟电子技术基础/week4-3-基本放大电路5.md
       - week5-1-集成运算放大电路1: 模拟电子技术基础/week5-1-集成运算放大电路1.md
       - week5-3-集成运算放大电路2: 模拟电子技术基础/week5-3-集成运算放大电路2.md
+      - week6-1-集成运算放大电路3: 模拟电子技术基础/week6-1-集成运算放大电路3.md
+      - week6-3-集成运算放大电路4: 模拟电子技术基础/week6-3-集成运算放大电路4.md
   - 信号与系统:
       - index: 信号与系统/index.md
       - week-1-intro: 信号与系统/week-1-intro.md
@@ -235,4 +238,5 @@ nav:
       - week-3-微分方程与差分方程求解: 信号与系统/week-3-微分方程与差分方程求解.md
       - week-4-卷积与LTI系统分析: 信号与系统/week-4-卷积与LTI系统分析.md
       - week-5-傅里叶分解与傅里叶变换: 信号与系统/week-5-傅里叶分解与傅里叶变换.md
+      - week-6-傅里叶变换的性质: 信号与系统/week-6-傅里叶变换的性质.md
   - contributors: contributors/index.md
