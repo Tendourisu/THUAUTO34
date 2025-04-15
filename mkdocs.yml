@@ -218,6 +218,7 @@ nav:
       - week5-多维随机变量: 概率论与数理统计/week5-多维随机变量.md
       - week6-随机过程与Poisson过程: 概率论与数理统计/week6-随机过程与Poisson过程.md
       - week7-连续型随机变量: 概率论与数理统计/week7-连续型随机变量.md
+      - week8-二维连续型随机向量: 概率论与数理统计/week8-二维连续型随机向量.md
   - 模拟电子技术基础:
       - index: 模拟电子技术基础/index.md
       - week1-1-intro: 模拟电子技术基础/week1-1-intro.md
@@ -234,6 +235,7 @@ nav:
       - week6-3-集成运算放大电路4: 模拟电子技术基础/week6-3-集成运算放大电路4.md
       - week7-1-频率响应1: 模拟电子技术基础/week7-1-频率响应1.md
       - week7-3-频率响应2: 模拟电子技术基础/week7-3-频率响应2.md
+      - week8-1-放大电路中的反馈1: 模拟电子技术基础/week8-1-放大电路中的反馈1.md
   - 信号与系统:
       - index: 信号与系统/index.md
       - week-1-intro: 信号与系统/week-1-intro.md
@@ -243,4 +245,5 @@ nav:
       - week-5-傅里叶分解与傅里叶变换: 信号与系统/week-5-傅里叶分解与傅里叶变换.md
       - week-6-傅里叶变换的性质: 信号与系统/week-6-傅里叶变换的性质.md
       - week-7-傅里叶变换性质总结2: 信号与系统/week-7-傅里叶变换性质总结2.md
+      - week-8-频域分析与调制解调技术: 信号与系统/week-8-频域分析与调制解调技术.md
   - contributors: contributors/index.md
