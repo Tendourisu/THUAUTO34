@@ -172,14 +172,16 @@ $$ \min_C \{E((X - C)^2)\} = E((X - EX)^2) $$
 $$ \min_C \{E ((X - C))\} = E ((X - X_{median})) $$
 - **Cauchy-Schwarz不等式**：
   
-  $$
-   [E (XY)] ^2 \leq E(X^2)E(Y^2)
-  $$
+$$
+  [E (XY)] ^2 \leq E(X^2)E(Y^2)
+$$
+
 - Holder 不等式： $E|X|^p<\infty ,\ E|Y|^q<\infty ,\ \frac{1}p{+\frac{1}q{=1 ,\ p>1}}$
-  
-  $$
-   [E (XY)]  \leq (E(X^p))^{\frac{1}{p}}(E(Y^q))^{\frac{1}{q}}
-  $$
+
+$$
+  [E (XY)]  \leq (E(X^p))^{\frac{1}{p}}(E(Y^q))^{\frac{1}{q}}
+$$
+
 - 高阶矩存在，则低阶矩一定存在
 
 ---
